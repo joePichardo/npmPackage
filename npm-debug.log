@@ -1,0 +1,78 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.1.1/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.1.1/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.6.0
+3 info using node@v4.1.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/ubuntu/workspace/npmFolder',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/ubuntu/.npm/npmpackage/1.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+10 info lifecycle npmpackage@1.0.1~prepublish: npmpackage@1.0.1
+11 silly lifecycle npmpackage@1.0.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/ubuntu/.npm/npmpackage/1.0.1/package.tgz',
+12 verbose tar pack   '/home/ubuntu/workspace/npmFolder' ]
+13 verbose tarball /home/ubuntu/.npm/npmpackage/1.0.1/package.tgz
+14 verbose folder /home/ubuntu/workspace/npmFolder
+15 verbose addLocalTarball adding from inside cache /home/ubuntu/.npm/npmpackage/1.0.1/package.tgz
+16 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd npmpackage@1.0.1
+18 verbose afterAdd /home/ubuntu/.npm/npmpackage/1.0.1/package/package.json not in flight; writing
+19 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/ubuntu/.npm/npmpackage/1.0.1/package/package.json written
+21 silly publish { name: 'npmpackage',
+21 silly publish   version: '1.0.1',
+21 silly publish   description: 'creating a package.json file',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'node test.js' },
+21 silly publish   keywords: [ 'npm', 'json' ],
+21 silly publish   author: { name: 'Joe Pichardo' },
+21 silly publish   license: 'ISC',
+21 silly publish   dependencies: { '@linclark/pkg': '^1.0.2' },
+21 silly publish   devDependencies: {},
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/joePichardo/npmPackage.git' },
+21 silly publish   bugs: { url: 'https://github.com/joePichardo/npmPackage/issues' },
+21 silly publish   homepage: 'https://github.com/joePichardo/npmPackage#readme',
+21 silly publish   readme: 'Testing out npm and the features with it. Also, learning a bit of vim text editor, makes things a little easier in the console.\n\n',
+21 silly publish   readmeFilename: 'readme.md',
+21 silly publish   gitHead: 'e6b988f082f45f5a2fc26d99d74d46916397570e',
+21 silly publish   _id: 'npmpackage@1.0.1',
+21 silly publish   _shasum: 'd58f5f674d90bdd531d17257e86562d1ff1eb04f',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name npmpackage
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry http://localhost:15443/
+26 silly mapToRegistry uri http://localhost:15443/npmpackage
+27 verbose publish registryBase http://localhost:15443/
+28 silly publish uploading /home/ubuntu/.npm/npmpackage/1.0.1/package.tgz
+29 verbose stack Error: auth required for publishing
+29 verbose stack     at CachingRegistryClient.publish (/home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
+29 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/lib/publish.js:137:14
+29 verbose stack     at mapToRegistry (/home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/lib/utils/map-to-registry.js:55:3)
+29 verbose stack     at publish_ (/home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/lib/publish.js:106:3)
+29 verbose stack     at Array.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+29 verbose stack     at LOOP (/home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+29 verbose stack     at LOOP (/home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
+29 verbose stack     at chain (/home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+29 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/lib/publish.js:72:5
+29 verbose stack     at RES (/home/ubuntu/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+30 verbose cwd /home/ubuntu/workspace/npmFolder
+31 error Linux 4.2.0-c9
+32 error argv "/home/ubuntu/.nvm/versions/node/v4.1.1/bin/node" "/home/ubuntu/.nvm/versions/node/v4.1.1/bin/npm" "publish"
+33 error node v4.1.1
+34 error npm  v3.6.0
+35 error code ENEEDAUTH
+36 error need auth auth required for publishing
+37 error need auth You need to authorize this machine using `npm adduser`
+38 verbose exit [ 1, true ]
