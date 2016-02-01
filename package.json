@@ -1,0 +1,27 @@
+{
+  "name": "npmpackage",
+  "version": "1.0.1",
+  "description": "creating a package.json file",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "npm",
+    "json"
+  ],
+  "author": "Joe Pichardo",
+  "license": "ISC",
+  "dependencies": {
+    "@linclark/pkg": "^1.0.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joePichardo/npmPackage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joePichardo/npmPackage/issues"
+  },
+  "homepage": "https://github.com/joePichardo/npmPackage#readme"
+}
